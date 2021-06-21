@@ -1,10 +1,10 @@
-    //first problem
+         //first problem
 
     function kilometerToMeter(kilometer){
         let meter=kilometer*1000;
            return meter;
      }
-     let result=kilometerToMeter(8);
+     let result=kilometerToMeter(9);
      console.log(result);
      
      
@@ -22,16 +22,17 @@
         return totalExpense;
      
      }
-     let budget=budgetCalculator(12,15,11);
+     let budget=budgetCalculator(10,12,5);
      console.log(budget);
      
              //Third Problem
      
      function hotelCost(days){
-           if(days<=10){
-             let cost=days*100;
+       let cost=0;
+           if(days>0 && days<=10){
+              cost=days*100;
            }
-           else if(days<=20){
+           else if(days>10 && days<=20){
              let firstTen =10*100;
              let remain=days-10;
              let secondTen=remain*80;
@@ -47,26 +48,25 @@
            }
          return cost;
      }
-     let totalCost=hotelCost(30);
+     let totalCost=hotelCost(15);
      console.log(totalCost);
      
      
                //fourth Problem
      
-         function megaFriend(name){
-             let max=name[0].length;
-             for (let i = 0; i < name.length; i++) {
-                 // const element = name[i];
-                 // if (element>max){
-                 //     max=element;
-                 if(name[i].length > max){
-                     max = name[i].length;
-                 }
-                 
-                 
-             }
-             return max;
-         }
-      let friend=["sai","mahbub","tareq","saifulislammahbub","mahi","abdullah"];
+        
+        function megaFriend(name){
+          let max=name[0];
+          for (let i = 0; i < name.length; i++) {
+             
+              if(name[i].length > max.length){
+                  max = name[i];
+              }
+   
+   
+          }
+          return max;
+      }
+      let friend=["sai","mahbub","tareq hasan","saiful islam mahbub","mahi","abdullah"];
       let biggest=megaFriend(friend);
       console.log(biggest);
