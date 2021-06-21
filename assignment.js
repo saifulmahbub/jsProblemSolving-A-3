@@ -1,4 +1,7 @@
-         //first problem
+       
+   //https://github.com/saifulmahbub/jsProblemSolving-A-3
+
+       //first problem
 
     function kilometerToMeter(kilometer){
         let meter=kilometer*1000;
